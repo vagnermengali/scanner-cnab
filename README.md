@@ -65,7 +65,7 @@ python manage.py runserver
 
 A API tem um total de 4 endpoints, podendo escanear o documento CNAB, listar transações, loja específica e deleção de todas as transações para um novo escaneamento. <br/>
 
-A url base da API é 
+<p>A url base da API é <a href="http://localhost:8000/api/">http://localhost:8000/api/</a></p>
 
 <h2 align ='center'> Listando transações </h2>
 
@@ -80,26 +80,35 @@ Não é necessário um corpo da requisição.
 `GET /api/transaction/ - FORMATO DA RESPOSTA - STATUS 200`
 
 ```json
-[
-  "total": 2,
-  "results": 
-  {
-    "id": 0,
-    "transaction": "string",
-    "date": "string",
-    "value": "string",
-    "hour": "string",
-    "store": "string",
-  },
-  {
-    "id": 1,
-    "transaction": "string",
-    "date": "string",
-    "value": "string",
-    "hour": "string",
-    "store": "string",
-  }
-]
+{
+    "total": 3,
+    "results": [
+        {
+            "id": "8a1968e2-a7a6-4d8e-b4f9-2725e1d5d77d",
+            "transaction": "2",
+            "date": "2019-03-01",
+            "value": "112.00",
+            "hour": "23:42:34",
+            "store": "BAR DO JOAO"
+        },
+        {
+            "id": "be6c647f-8374-4f29-ac55-d4b12f9f8558",
+            "transaction": "9",
+            "date": "2019-03-01",
+            "value": "102.00",
+            "hour": "00:00:00",
+            "store": "LOJA DO O MATRIZ"
+        },
+        {
+            "id": "44abeadc-f60d-48d6-9a86-380721e171e3",
+            "transaction": "2",
+            "date": "2019-03-01",
+            "value": "5.00",
+            "hour": "14:18:08",
+            "store": "MERCEARIA 3 IRMAOS"
+        },
+    ]
+}
 ```
 
 <h2 align ='center'> Deletando transações </h2>
@@ -133,26 +142,27 @@ Não é necessário um corpo da requisição.
 `GET /api/transaction/store/store+name/ - FORMATO DA RESPOSTA - STATUS 200`
 
 ```json
-[
-  "total": 2,
-  "results": 
-  {
-    "id": 0,
-    "transaction": "string",
-    "date": "string",
-    "value": "string",
-    "hour": "string",
-    "store": "store name",
-  },
-  {
-    "id": 1,
-    "transaction": "string",
-    "date": "string",
-    "value": "string",
-    "hour": "string",
-    "store": "store name",
-  }
-]
+{
+    "total": 2,
+    "results": [
+        {
+            "id": "8a1968e2-a7a6-4d8e-b4f9-2725e1d5d77d",
+            "transaction": "2",
+            "date": "2019-03-01",
+            "value": "112.00",
+            "hour": "23:42:34",
+            "store": "BAR DO JOAO"
+        },
+        {
+            "id": "14e70b44-d03c-449c-ab5b-3dc5275ccfd1",
+            "transaction": "1",
+            "date": "2019-03-01",
+            "value": "152.00",
+            "hour": "23:30:00",
+            "store": "BAR DO JOAO"
+        }
+    ]
+}
 ```
 
 <h2 align ='center'> Escaneamento do documento CNAB </h2>
@@ -214,8 +224,11 @@ Buscar por histórico de transações de loja específica não encontrada.
 {
     "details": "Store not found",
     "stores": [
-        "Padaria dos sonhos",
-        "Churrascaria Bom bife"
+        "MERCADO DA AVENIDA",
+        "BAR DO JOAO",
+        "MERCEARIA 3 IRMAOS",
+        "LOJA DO O MATRIZ",
+        "LOJA DO O FILIAL"
     ]
 }
 ```
