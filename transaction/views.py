@@ -71,23 +71,3 @@ class TransactionStoreView(RetrieveAPIView):
         serializer = self.get_serializer(queryset, many=True)
    
         return Response(data={'total': len(serializer.data),'results': serializer.data},status=status.HTTP_200_OK)
-
-"""     queryset = Transaction.objects.all()
-    serializer_class = TransactionSerializer
-    lookup_field = 'store'
-
-    def get(self, request, *args, **kwargs):
-        stores = get_stores_in_db(queryset=Transaction.objects.all)
-        store_name = self.kwargs['store']
-        stores_treated = [unicodedata.normalize('NFKD', store.lower()).replace(" ", "").replace("-", "").encode('ASCII', 'ignore').decode() for store in stores]
-
-        if store_name.replace(" ", "").lower() not in stores_treated:
-            return Response(data={'details': 'Store not found', 'stores': stores},status=status.HTTP_404_NOT_FOUND)
-        
-        filtered_stores = []
-        for store in stores_treated:
-            if store_name in store:
-                filtered_stores.append(store)
-   
-        return Response(data={'results': filtered_stores},status=status.HTTP_200_OK)
- """
