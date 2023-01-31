@@ -20,7 +20,7 @@ def convert_values_by_100(value: str) -> float:
 
 
 def convert_text(string: str) -> str:
-    return unicodedata.normalize('NFKD', string.rstrip()).encode('ASCII', 'ignore').decode().replace("- ", "")
+    return unicodedata.normalize('NFKD', string.rstrip()).encode('ASCII', 'ignore').decode()
 
 
 def clear_data(data_file):
@@ -64,3 +64,14 @@ def write_file(file_obj):
     except:
         return False
     
+def get_balance(queryset):
+    values = []
+    for transaction in queryset:
+        values.append(transaction)
+    minus_list = ["2", "3", "9"]
+    total = 0
+    for item in values:
+        total += item.value
+        if item.transaction in minus_list:
+            total -= item.value
+    return round(total, 2)

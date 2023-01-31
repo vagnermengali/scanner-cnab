@@ -4,7 +4,7 @@ from rest_framework.parsers import MultiPartParser
 import json
 from .models import Transaction
 from .serializers import TransactionSerializer
-from .utils import get_stores_in_db, clear_data, write_file
+from .utils import get_stores_in_db, clear_data, write_file, get_balance
 
 class TransactionUploadView(APIView):
     parser_classes = [MultiPartParser]
@@ -69,5 +69,6 @@ class TransactionStoreView(RetrieveAPIView):
         self.queryset = Transaction.objects.filter(store__icontains=store_name.upper().replace("+", " ").replace("-", ""))
         queryset = self.filter_queryset(self.get_queryset())
         serializer = self.get_serializer(queryset, many=True)
-   
-        return Response(data={'total': len(serializer.data),'results': serializer.data},status=status.HTTP_200_OK)
+        total = sum(float(item['value']) for item in serializer.data)
+
+        return Response(data={'total': len(serializer.data), 'total_value': total, 'results': serializer.data}, status=status.HTTP_200_OK)
