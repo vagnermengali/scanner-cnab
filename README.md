@@ -3,7 +3,7 @@
 </h1>
 
 <p align = "center">
-Este é o backend da aplicação Scanner CNBA - Que tem fins de facilitar o escaneamento de documentos CNAB.txt
+Este é a aplicação Scanner CNBA - Que tem fins de facilitar o escaneamento de documentos CNAB.txt
 </p>
 
 <p align="center">
