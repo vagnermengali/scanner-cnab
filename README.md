@@ -221,6 +221,7 @@ Não é necessário um corpo da requisição.
 ```json
 {
     "total": 2,
+    "total_value": 264.0,
     "results": [
         {
             "id": "8a1968e2-a7a6-4d8e-b4f9-2725e1d5d77d",
