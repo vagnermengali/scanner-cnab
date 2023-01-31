@@ -9,7 +9,7 @@ Este é o backend da aplicação Scanner CNBA - Que tem fins de facilitar o esca
 <p align="center">
   <a href="#instalação">Instalação</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="#endpoints">Endpoints</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="#application">Application</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#aplicação">Aplicação</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="#swagger">Swagger</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
@@ -27,17 +27,17 @@ git clone https://github.com/vagnermengali/scanner-cnab.git
 ```
 cd scanner-cnab/backend
 ```
-<p>4. Crie seu ambiente virtual:</p>
+<p>3. Crie seu ambiente virtual:</p>
   
 ```
 python -m venv venv    
 ```
-<p>5. Ative seu ambiente virtual:</p>
+<p>4. Ative seu ambiente virtual:</p>
   
 ```
 source venv/bin/activate  
 ```
-<p>6. Instale as dependências do projeto:</p>
+<p>5. Instale as dependências do projeto:</p>
   
 ```
 pip install -r requirements.txt 
@@ -47,12 +47,12 @@ pip install -r requirements.txt
 ```
 python manage.py makemigrations 
 ```
-<p>6. Aplique suas migrações:</p>
+<p>7. Aplique suas migrações:</p>
   
 ```
 python manage.py migrate
 ```
-<p>6. Ative o server:</p>
+<p>8. Ative o server:</p>
 
 ```
 python manage.py runserver
@@ -77,15 +77,63 @@ git clone https://github.com/vagnermengali/scanner-cnab.git
 ```
 cd scanner-cnab/frontend
 ```
-<p>4. Crie sua node module:</p>
+<p>3. Crie sua node module:</p>
   
 ```
 yarn ou yarn install   
 ```
-<p>6. Ative o server:</p>
+<p>4. Ative o server:</p>
 
 ```
 yarn start
+```
+<p align ='center'><a href="#--scanner-cnab" >Voltar ao início</a></p>
+
+---
+
+## **Tutorial de uso**
+
+Depois que tudo for instalado e estiver rodando, chegou a hora de usufruir da aplicação, segui a passo a passo para um boa experiência de usuário<br/>
+
+<p>1. Clone o repositório:</p>
+
+```
+<img  alt="VagnerTech" width="30" src="https://github.com/vagnermengali/scanner-cnab/tree/main/tutorial/passo1.svg" />
+```
+<p>2. Adentre na pasta raiz do projeto:</p>
+  
+```
+<img  alt="VagnerTech" width="30" src="https://github.com/vagnermengali/scanner-cnab/tree/main/tutorial/passo2.svg" />
+```
+<p>3. Crie seu ambiente virtual:</p>
+  
+```
+<img  alt="VagnerTech" width="30" src="https://github.com/vagnermengali/scanner-cnab/tree/main/tutorial/passo3.svg" />
+```
+<p>4. Ative seu ambiente virtual:</p>
+  
+```
+<img  alt="VagnerTech" width="30" src="https://github.com/vagnermengali/scanner-cnab/tree/main/tutorial/passo4.svg" />
+```
+<p>5. Instale as dependências do projeto:</p>
+  
+```
+<img  alt="VagnerTech" width="30" src="https://github.com/vagnermengali/scanner-cnab/tree/main/tutorial/passo5.svg" />
+```
+<p>6. Crie suas migrações:</p>
+  
+```
+<img  alt="VagnerTech" width="30" src="https://github.com/vagnermengali/scanner-cnab/tree/main/tutorial/passo6.svg" />
+```
+<p>7. Aplique suas migrações:</p>
+  
+```
+<img  alt="VagnerTech" width="30" src="https://github.com/vagnermengali/scanner-cnab/tree/main/tutorial/passo7.svg" />
+```
+<p>8. Ative o server:</p>
+
+```
+<img  alt="VagnerTech" width="30" src="https://github.com/vagnermengali/scanner-cnab/tree/main/tutorial/passo8.svg" />
 ```
 <p align ='center'><a href="#--scanner-cnab" >Voltar ao início</a></p>
 
