@@ -105,7 +105,7 @@ Depois que tudo for instalado e estiver rodando, chegou a hora de usufruir da ap
 
 <img  alt="VagnerTech" width="1500" src="https://github.com/vagnermengali/scanner-cnab/blob/main/tutorial/passo-2.svg" />
 
-<p>3. Selecione o arquivo e clqiue em abrir:</p>
+<p>3. Selecione o arquivo e clique em abrir:</p>
   
 
 <img  alt="VagnerTech" width="1500" src="https://github.com/vagnermengali/scanner-cnab/blob/main/tutorial/passo-3.svg" />
@@ -115,7 +115,7 @@ Depois que tudo for instalado e estiver rodando, chegou a hora de usufruir da ap
 
 <img  alt="VagnerTech" width="1500" src="https://github.com/vagnermengali/scanner-cnab/blob/main/tutorial/passo-4.svg" />
 
-<p>5. Já aquin selecione a empresa desejada:</p>
+<p>5. Já aqui selecione a empresa desejada:</p>
   
 
 <img  alt="VagnerTech" width="1500" src="https://github.com/vagnermengali/scanner-cnab/blob/main/tutorial/passo-5.svg" />
@@ -125,14 +125,14 @@ Depois que tudo for instalado e estiver rodando, chegou a hora de usufruir da ap
 
 <img  alt="VagnerTech" width="1500" src="https://github.com/vagnermengali/scanner-cnab/blob/main/tutorial/passo-6.svg" />
 
-<p>7. Logo aós se desejar apague o escaneamento feito, e já estará pronto para repetir o processo:</p>
+<p>7. Filtragem concluída:</p>
   
 
 <img  alt="VagnerTech" width="1500" src="https://github.com/vagnermengali/scanner-cnab/blob/main/tutorial/passo-7.svg" />
 
-<p>8. Ative o server:</p>
+<p>8. Logo aós se desejar apague o escaneamento feito, e já estará pronto para repetir o processo:</p>
 
-<img  alt="VagnerTech" width="30" src="https://github.com/vagnermengali/scanner-cnab/blob/main/tutorial/passo-8.svg" />
+<img  alt="VagnerTech" width="1500" src="https://github.com/vagnermengali/scanner-cnab/blob/main/tutorial/passo-8.svg" />
 
 <p align ='center'><a href="#--scanner-cnab" >Voltar ao início</a></p>
 
