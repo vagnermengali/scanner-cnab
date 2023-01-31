@@ -64,14 +64,8 @@ def write_file(file_obj):
     except:
         return False
     
-def get_balance(queryset):
-    values = []
-    for transaction in queryset:
-        values.append(transaction)
+def get_balance(serializer_data):
     minus_list = ["2", "3", "9"]
-    total = 0
-    for item in values:
-        total += item.value
-        if item.transaction in minus_list:
-            total -= item.value
+    total = sum(float(item['value']) for item in serializer_data if item['transaction'] not in minus_list)
     return round(total, 2)
+

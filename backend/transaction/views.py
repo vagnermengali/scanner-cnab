@@ -69,6 +69,6 @@ class TransactionStoreView(RetrieveAPIView):
         self.queryset = Transaction.objects.filter(store__icontains=store_name.upper().replace("+", " ").replace("-", ""))
         queryset = self.filter_queryset(self.get_queryset())
         serializer = self.get_serializer(queryset, many=True)
-        total = sum(float(item['value']) for item in serializer.data)
+        total = get_balance(serializer.data)
 
         return Response(data={'total': len(serializer.data), 'total_value': total, 'results': serializer.data}, status=status.HTTP_200_OK)
