@@ -10,7 +10,7 @@ class TransactionUploadView(APIView):
     parser_classes = [MultiPartParser]
 
     def post(self, request: Request, format=None) -> Response:
-        file_obj = request.data.get("file", default=None)
+        file_obj = request.data.get("file", None)
         if file_obj is None:
             return Response(
                 data={"file": "This field is required."},

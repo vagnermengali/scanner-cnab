@@ -20,7 +20,7 @@ def convert_values_by_100(value: str) -> float:
 
 
 def convert_text(string: str) -> str:
-    return unicodedata.normalize('NFKD', string.rstrip()).encode('ASCII', 'ignore').decode()
+    return unicodedata.normalize('NFKD', string.rstrip()).encode('ASCII', 'ignore').decode().replace("- ", "")
 
 
 def clear_data(data_file):

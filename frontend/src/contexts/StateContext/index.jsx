@@ -12,7 +12,7 @@ export const StatesProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
 
   const totalValue = () => dataByStore.map(item => item.value).reduce((acc, cur) => acc + cur, 0);
-
+  console.log(data.id)
 
 
   const getAllRequest = () => {
@@ -46,6 +46,7 @@ export const StatesProvider = ({ children }) => {
       .then((response) => getAllRequest())
       .finally(() => setLoading(false));
   };
+
   return (
     <StatesContext.Provider
       value={{

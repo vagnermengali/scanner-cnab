@@ -8,11 +8,13 @@ import Select from "@mui/material/Select";
 import { StatesContext } from "../../contexts/StateContext";
 
 export default function SelectInput() {
-  const { store, setStore } = React.useContext(StatesContext);
+  const { store, setStore, data } = React.useContext(StatesContext);
 
   const handleChange = (event) => {
     setStore(event.target.value);
   };
+
+  const uniqueStores = new Set();
   const list = [
     {
       name: "BAR DO JOÃO",
@@ -47,11 +49,17 @@ export default function SelectInput() {
           onChange={handleChange}
           autoWidth
         >
-          {list.map((elem, index) => (
-            <MenuItem key={index} value={elem.value}>
-              {elem.name}
-            </MenuItem>
-          ))}
+          {data.map((elem, index) => {
+            if (!uniqueStores.has(elem.store)) {
+              uniqueStores.add(elem.store);
+              return (
+                <MenuItem key={index} value={elem.store.toLowerCase().replace(/ /g, '+')}>
+                  {elem.store}
+                </MenuItem>
+              );
+            }
+            return null;
+          })}
         </Select>
       </FormControl>
     </Box>
