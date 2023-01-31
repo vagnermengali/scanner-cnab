@@ -9,7 +9,7 @@ Este é o backend da aplicação Scanner CNBA - Que tem fins de facilitar o esca
 <p align="center">
   <a href="#instalação">Instalação</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="#endpoints">Endpoints</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="#application">Application</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#aplicação">Aplicação</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="#swagger">Swagger</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
@@ -64,6 +64,36 @@ python manage.py runserver
 ## **Aplicação**
 
 Depois que api ja estiver iniciada em sua máquina, prossiga com o passo-a-passo de usabilidade da aplicação, porém se opitar por na instalar o frontend disponibilizamos o [link do deploy](https://cronos-git-main-vagnermengali.vercel.app/)<br/>
+
+A url base da interface é http://localhost:3000
+
+<p>1. Clone o repositório:</p>
+
+```
+git clone https://github.com/vagnermengali/scanner-cnab.git
+```
+<p>2. Adentre na pasta raiz do projeto:</p>
+  
+```
+cd scanner-cnab/frontend
+```
+<p>4. Crie sua node module:</p>
+  
+```
+yarn ou yarn install   
+```
+<p>6. Ative o server:</p>
+
+```
+yarn start
+```
+<p align ='center'><a href="#--scanner-cnab" >Voltar ao início</a></p>
+
+---
+
+## **Tutorial de uso**
+
+Depois que tudo for instalado e estiver rodando, chegou a hora de usufruir da aplicação, segui a passo a passo para um boa experiência de usuário<br/>
 
 A url base da interface é http://localhost:3000
 
