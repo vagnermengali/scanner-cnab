@@ -30,18 +30,18 @@ export default function Content() {
     totalValue
   } = React.useContext(StatesContext);
   return (
-    <Paper sx={{ maxWidth: 1800, margin: "auto", overflow: "hidden" }}>
-      <TabPanel value={tab} index={0} >
+    <Paper sx={{ maxWidth: 1800, margin: "auto", overflow: "hidden", color: "#FFFFFF" }}>
+      <TabPanel value={tab} index={0}>
         <AppBar
           position="static"
           color="default"
           elevation={0}
-          sx={{ borderBottom: "1px solid #ff0000", bgcolor: "#ffffff"}}
+          sx={{ borderBottom: "1px solid #DADADA", bgcolor: "#ffffff"}}
         >
           <Toolbar>
             <Grid container spacing={2} alignItems="center">
               <Grid item>
-                <SearchIcon color="inherit" sx={{ display: "block" }} />
+                <SearchIcon color="inherit" sx={{ display: "block",color: "#757575" }} />
               </Grid>
               <Grid item xs>
                 <TextField
@@ -93,7 +93,7 @@ export default function Content() {
           position="static"
           color="default"
           elevation={0}
-          sx={{ borderBottom: "1px solid #ff0000", bgcolor: "#ffffff" }}
+          sx={{ borderBottom: "1px solid #DADADA", bgcolor: "#ffffff" }}
         >
           <Toolbar>
             <Grid container spacing={2} alignItems="center">
@@ -103,6 +103,7 @@ export default function Content() {
               <Grid item>
                 <Button
                   variant="contained"
+                  sx={{ color: "#FFFFFF"}}
                   onClick={() => getByStoreRquest(store)}
                 >
                   Select Store

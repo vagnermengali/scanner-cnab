@@ -10,7 +10,7 @@ import Header from "./Header";
 
 function Copyright() {
   return (
-    <Typography variant="body2" sx={{color: "#ffff" }} align="center">
+    <Typography variant="body2" sx={{color: "#FFFFFF" }} align="center">
       {"Copyright © "}
       <Link color="inherit" href="https://github.com/vagnermengali">
         Vagner Mengali
@@ -23,9 +23,9 @@ function Copyright() {
 let theme = createTheme({
   palette: {
     primary: {
-      light: "#ff6363",
-      main: "#ff0000",
-      dark: "#b30000",
+      light: "rgb(91, 201, 215)",
+      main: "rgb(43, 195, 215)",
+      dark: "rgb(23, 111, 123)",
     },
   },
   typography: {
@@ -58,7 +58,7 @@ theme = {
     MuiDrawer: {
       styleOverrides: {
         paper: {
-          backgroundColor: "#ffffff",
+          backgroundColor: "#FFFFFF",
         },
       },
     },
@@ -127,7 +127,7 @@ theme = {
       styleOverrides: {
         root: {
           "&.Mui-selected": {
-            color: "#f74f4f",
+            color: "rgb(91, 201, 215)",
           },
         },
       },
@@ -178,11 +178,11 @@ export default function Paperbase() {
           <Header onDrawerToggle={handleDrawerToggle} />
           <Box
             component="main"
-            sx={{ flex: 1, py: 6, px: 4, bgcolor: "#ff0000" }}
+            sx={{ flex: 1, py: 6, px: 4, bgcolor: "#ededed" }}
           >
             <Content />
           </Box>
-          <Box component="footer" sx={{ p: 2, bgcolor: "#ff0000" }}>
+          <Box component="footer" sx={{ p: 2, bgcolor: "rgb(43, 195, 215)" }}>
             <Copyright />
           </Box>
         </Box>
