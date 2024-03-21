@@ -27,24 +27,27 @@ export const StatesProvider: React.FC<StatesProviderProps> = ({ children }) => {
     setLoading(true);
     api
       .get("transaction/")
-      .then((response) => setData(response.data.results))
+      .then(response => setData(response.data.results))
       .finally(() => setLoading(false));
   };
+
   const getByStoreRquest = (store: string) => {
     setLoading(true);
     api
       .get(`transaction/store/${store}/`)
-      .then((response) => setDataByStore(response.data))
+      .then(response => setDataByStore(response.data))
       .finally(() => setLoading(false));
   };
+
   const deleteByStoreRquest = () => {
     setLoading(true);
     api
       .delete(`/transaction/delete/`)
-      .then((response) => setData([]))
-      .then((response) => getAllRequest())
+      .then(() => setData([]))
+      .then(() => getAllRequest())
       .finally(() => setLoading(false));
   };
+
   const uploadFile = (file: FileList | null) => {
     if (file && file.length > 0) {
       const formData = new FormData();
@@ -52,7 +55,7 @@ export const StatesProvider: React.FC<StatesProviderProps> = ({ children }) => {
       setLoading(true);
       api
         .post(`/transaction/file-scan/`, formData)
-        .then((response) => getAllRequest())
+        .then(() => getAllRequest())
         .finally(() => setLoading(false));
     }
   };

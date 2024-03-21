@@ -1,26 +1,30 @@
-import * as React from "react";
-import PropTypes from "prop-types";
+import React from "react";
 import AppBar from "@mui/material/AppBar";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 import { StatesContext } from "../../contexts/StateContext";
 
-function Header(props: any) {
+interface HeaderProps {
+  onDrawerToggle: () => void;
+}
+
+function Header({ onDrawerToggle }: HeaderProps) {
   const { tab, setTab } = React.useContext(StatesContext);
-  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+
+  const handleChange = (_event: React.SyntheticEvent, newValue: number) => {
     setTab(newValue);
   };
 
   return (
-    <React.Fragment>
-      <AppBar color="primary" position="sticky" elevation={0}></AppBar>
+    <>
+      <AppBar color="primary" position="sticky" elevation={0} />
       <AppBar
         component="div"
         color="primary"
         position="static"
         elevation={0}
         sx={{ zIndex: 0 }}
-      ></AppBar>
+      />
       <AppBar
         component="div"
         position="static"
@@ -32,12 +36,10 @@ function Header(props: any) {
           <Tab label="Transactions by Store" value={1} />
         </Tabs>
       </AppBar>
-    </React.Fragment>
+      {/* Use a prop onDrawerToggle */}
+      <button onClick={onDrawerToggle}>Toggle Drawer</button>
+    </>
   );
 }
-
-Header.propTypes = {
-  onDrawerToggle: PropTypes.func.isRequired,
-};
 
 export default Header;
