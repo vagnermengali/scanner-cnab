@@ -163,11 +163,6 @@ theme = {
 };
 
 export default function Paperbase() {
-  const [mobileOpen, setMobileOpen] = React.useState(false);
-
-  const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen);
-  };
 
   return (
     <ThemeProvider theme={theme}>
