@@ -10,7 +10,7 @@ import { StatesContext } from "../../contexts/StateContext";
 export default function SelectInput() {
   const { store, setStore, data } = React.useContext(StatesContext);
 
-  const handleChange = (event) => {
+  const handleChange = (event: any) => {
     setStore(event.target.value);
   };
 
@@ -49,7 +49,7 @@ export default function SelectInput() {
           onChange={handleChange}
           autoWidth
         >
-          {data.map((elem, index) => {
+          {data.map((elem: any, index: any) => {
             if (!uniqueStores.has(elem.store)) {
               uniqueStores.add(elem.store);
               return (

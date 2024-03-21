@@ -15,5 +15,5 @@ export interface IContextProps {
     store: string;
     setStore: React.Dispatch<React.SetStateAction<string>>;
     deleteByStoreRquest: () => void;
-    totalValue: number;
+    totalValue: any;
 }

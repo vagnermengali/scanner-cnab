@@ -31,7 +31,7 @@ const columns = [
   },
 ];
 
-const DataBox = ({ data }: never) => {
+const DataBox = ({ data }: any) => {
   return (
     <Box sx={{ height: 450, width: "100%" }}>
       <DataGrid

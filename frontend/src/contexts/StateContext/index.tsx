@@ -1,17 +1,25 @@
-import { createContext, useState} from "react";
+import React, { createContext, useState, ReactNode, Dispatch, SetStateAction } from "react";
 import api from "../../services";
 import { IContextProps } from "../../interfaces/IContextProps";
-import { Children } from "../../interfaces/ChildrenProps";
+
+interface StatesProviderProps {
+  children: ReactNode;
+}
+
+export interface Transaction {
+  id: number;
+  value: number;
+}
 
 export const StatesContext = createContext<IContextProps>({} as IContextProps)
 
-export const StatesProvider = ({ children }: Children) => {
-  const [file, setFile] = useState(null);
-  const [tab, setTab] = useState(0);
-  const [data, setData] = useState([]);
-  const [store, setStore] = useState("");
-  const [dataByStore, setDataByStore] = useState([]);
-  const [loading, setLoading] = useState(false);
+export const StatesProvider: React.FC<StatesProviderProps> = ({ children }) => {
+  const [file, setFile] = useState<File | null>(null);
+  const [tab, setTab] = useState<number>(0);
+  const [data, setData] = useState<Transaction[]>([]);
+  const [store, setStore] = useState<string>("");
+  const [dataByStore, setDataByStore] = useState<Transaction[]>([]);
+  const [loading, setLoading] = useState<boolean>(false);
 
   const totalValue = () => dataByStore.map(item => item.value).reduce((acc, cur) => acc + cur, 0);
 
@@ -22,7 +30,7 @@ export const StatesProvider = ({ children }: Children) => {
       .then((response) => setData(response.data.results))
       .finally(() => setLoading(false));
   };
-  const getByStoreRquest = (store: unknown) => {
+  const getByStoreRquest = (store: string) => {
     setLoading(true);
     api
       .get(`transaction/store/${store}/`)
@@ -37,14 +45,16 @@ export const StatesProvider = ({ children }: Children) => {
       .then((response) => getAllRequest())
       .finally(() => setLoading(false));
   };
-  const uploadFile = (file: unknown) => {
-    const formData = new FormData();
-    formData.append("file", file[0]);
-    setLoading(true);
-    api
-      .post(`/transaction/file-scan/`, formData)
-      .then((response) => getAllRequest())
-      .finally(() => setLoading(false));
+  const uploadFile = (file: FileList | null) => {
+    if (file && file.length > 0) {
+      const formData = new FormData();
+      formData.append("file", file[0]);
+      setLoading(true);
+      api
+        .post(`/transaction/file-scan/`, formData)
+        .then((response) => getAllRequest())
+        .finally(() => setLoading(false));
+    }
   };
 
   return (
