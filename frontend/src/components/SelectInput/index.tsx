@@ -15,28 +15,7 @@ export default function SelectInput() {
   };
 
   const uniqueStores = new Set();
-  const list = [
-    {
-      name: "BAR DO JOÃO",
-      value: "bar+do+joao",
-    },
-    {
-      name: "LOJA DO Ó - MATRIZ",
-      value: "loja+do+o+matriz",
-    },
-    {
-      name: "MERCADO DA AVENIDA",
-      value: "mercado+da+avenida",
-    },
-    {
-      name: "MERCEARIA 3 IRMÃOS",
-      value: "mercearia+3+irmaos",
-    },
-    {
-      name: "LOJA DO Ó - FILIAL",
-      value: "loja+do+o+filial",
-    },
-  ];
+
   return (
     <Box sx={{ minWidth: 120, maxHeight: 100 }}>
       <FormControl fullWidth>
