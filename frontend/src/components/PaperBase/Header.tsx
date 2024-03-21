@@ -31,13 +31,11 @@ function Header({ onDrawerToggle }: HeaderProps) {
         elevation={0}
         sx={{ zIndex: 0 }}
       >
-        <Tabs value={tab} onChange={handleChange} textColor="inherit" sx={{ color: "#FFFFFF"}}>
+        <Tabs value={tab} onChange={handleChange} textColor="inherit" sx={{ color: "#FFFFFF" }}>
           <Tab label="All Transactions" value={0} />
           <Tab label="Transactions by Store" value={1} />
         </Tabs>
       </AppBar>
-      {/* Use a prop onDrawerToggle */}
-      <button onClick={onDrawerToggle}>Toggle Drawer</button>
     </>
   );
 }
