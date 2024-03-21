@@ -2,11 +2,9 @@
     "version": 2,
     "routes": [
       {
-        "handle": "filesystem"
-      },
-      {
-        "src": "/dist/(.*)",
-        "dest": "/dist/$1"
+        "handle": "filesystem",
+        "src": "/dist/(.*)", 
+        "destination": "/dist/$1"
       },
       {
         "src": "/(.*)",
@@ -14,5 +12,4 @@
       }
     ]
   }
-  
   
