@@ -346,10 +346,10 @@ This is the CNBA Scanner application - aimed at facilitating the scanning of CNA
 </p>
 
 <p align="center">
-  <a href="#nstallation">Installation</a>      
-  <a href="#endpoints">Endpoints</a>      
-  <a href="#application">Application</a>      
-  <a href="#swagger">Swagger</a>  
+  <a href="#installation">Installation</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#endpoints">Endpoints</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#application">Application</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#swagger">Swagger</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
 </p>
 
 ## **Installation**
