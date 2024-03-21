@@ -6,6 +6,7 @@ import Link from "@mui/material/Link";
 import Content from "./Content";
 import Header from "./Header";
 
+
 function Copyright() {
   return (
     <Typography variant="body2" sx={{ color: "#FFFFFF" }} align="center">
