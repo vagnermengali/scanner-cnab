@@ -4,11 +4,7 @@ import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 import { StatesContext } from "../../contexts/StateContext";
 
-interface HeaderProps {
-  onDrawerToggle: () => void;
-}
-
-function Header({ onDrawerToggle }: HeaderProps) {
+function Header() {
   const { tab, setTab } = React.useContext(StatesContext);
 
   const handleChange = (_event: React.SyntheticEvent, newValue: number) => {

@@ -9,7 +9,7 @@ import Header from "./Header";
 
 function Copyright() {
   return (
-    <Typography variant="body2" sx={{color: "#FFFFFF" }} align="center">
+    <Typography variant="body2" sx={{ color: "#FFFFFF" }} align="center">
       {"Copyright © "}
       <Link color="inherit" href="https://github.com/vagnermengali">
         Vagner Mengali
@@ -174,7 +174,7 @@ export default function Paperbase() {
       <Box sx={{ display: "flex", minHeight: "100vh" }}>
         <CssBaseline />
         <Box sx={{ flex: 1, display: "flex", flexDirection: "column" }}>
-          <Header onDrawerToggle={handleDrawerToggle} />
+          <Header />
           <Box
             component="main"
             sx={{ flex: 1, py: 6, px: 4, bgcolor: "#ededed" }}
