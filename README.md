@@ -19,9 +19,9 @@ Este é a aplicação Scanner CNBA - Que tem fins de facilitar o escaneamento de
 
 <p align="center">
   <a href="#instalação">Instalação</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="#endpoints">Endpoints</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#endpoints-pt-br">Endpoints</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="#aplicação">Aplicação</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="#swagger">Swagger</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#swagger-pt-br">Swagger</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
 ## **Instalação**
@@ -149,7 +149,7 @@ Depois que tudo for instalado e estiver rodando, chegou a hora de usufruir da ap
 
 ---
 
-## **Endpoints**
+## **Endpoints PT-BR**
 
 A API tem um total de 4 endpoints, podendo escanear o documento CNAB, listar transações, loja específica e deleção de todas as transações para um novo escaneamento. <br/>
 
@@ -325,7 +325,7 @@ Buscar por histórico de transações de loja específica não encontrada.
 
 ---
 
-## **Swagger** 
+## **Swagger PT-BR** 
 
 Api também conta com algumas rotas de interação, manipulação e documentação mais detalhada.
 
