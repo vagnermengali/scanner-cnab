@@ -2,6 +2,17 @@
   Scanner CNAB
 </h1>
 
+[![Banner](https://github.com/vagnermengali/scanner-cnab/blob/main/frontend/public/banner.png)](https://developer-blue-portfolio-vagnermengali.vercel.app/)
+
+<div align="center">
+   <a href="#documentação-em-português">Leia em Português |</a>
+  <a href="#documentation-in-english">Read in English</a>
+</div>
+
+---
+
+# Documentação em português
+
 <p align = "center">
 Este é a aplicação Scanner CNBA - Que tem fins de facilitar o escaneamento de documentos CNAB.txt
 </p>
@@ -327,5 +338,18 @@ Api também conta com algumas rotas de interação, manipulação e documentaç�
 <p align ='center'><a href="#--scanner-cnab" >Voltar ao início</a></p>
 
 ---
+
+# Documentation in English
+
+<p align = "center">
+This is the CNBA Scanner application - aimed at facilitating the scanning of CNAB.txt documents.
+</p>
+
+<p align="center">
+  <a href="#nstallation">Installation</a>      
+  <a href="#endpoints">Endpoints</a>      
+  <a href="#application">Application</a>      
+  <a href="#swagger">Swagger</a>  
+</p>
 
 <p align ='center'> Copyright <a href="https://github.com/vagnermengali">Vagner Mengali</a> 2023 </p>
