@@ -352,4 +352,4 @@ This is the CNBA Scanner application - aimed at facilitating the scanning of CNA
   <a href="#swagger">Swagger</a>  
 </p>
 
-<p align ='center'> Copyright <a href="https://github.com/vagnermengali">Vagner Mengali</a> 2023 </p>
+<p align ='center'> Copyright <a href="https://github.com/vagnermengali">Vagner Mengali</a> 2024 </p>
