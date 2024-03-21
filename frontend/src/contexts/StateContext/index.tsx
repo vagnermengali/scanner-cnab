@@ -1,4 +1,4 @@
-import React, { createContext, useState, ReactNode, Dispatch, SetStateAction } from "react";
+import React, { createContext, useState, ReactNode } from "react";
 import api from "../../services";
 import { IContextProps } from "../../interfaces/IContextProps";
 
