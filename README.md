@@ -666,3 +666,7 @@ The API also features some routes for interaction, manipulation, and more detail
 <p align ='center'><a href="#--scanner-cnab" >Back to Top</a></p>
 
 ---
+
+<div align="center">
+   <span>Created by </span><a href="https://github.com/vagnermengali">Vagner Mengali</a>
+</div>
